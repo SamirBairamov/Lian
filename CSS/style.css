@@ -155,7 +155,7 @@ section div .item_text2{
     border: solid 4px #000000;
 }
 
- .owl-carousel .owl-dots .owl-dot{
+ .owl-carousel .owl-dots .owl-dot {
     background-color: transparent;
 }
 
@@ -169,4 +169,93 @@ section div .item_text2{
     border: solid 1px #FFFFFF!important;
     border-radius: 20px;
     z-index: 5;
+    background-color: transparent !important;
+
+}
+.owl-carousel .owl-nav:before.owl-prev {
+    background-color: black;
+    transition: 0.3s;
+    color: black;
+}
+
+
+
+.owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 48%;
+    right: 111px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #FFFFFF !important;
+    border-radius: 20px;
+    z-index: 5;
+    background-color: transparent !important;}
+
+/*/код*/
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-widget-header {
+    border: none;
+    background: white;
+    text-align: center;
+    border-top: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+    border-radius: 0;
+
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin-top: 33px;
+    padding: 13px 0 18px;
+}
+
+.ui-tabs {
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+    padding: 0 15px 0 15px;
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    float: none;
+    display: inline;
+    margin: 0;
+    background-color: white;
+    border: none;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #777777;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: black;
+}
+
+.ui-tabs .ui-tabs-nav li:after {
+    content: "";
+    display: inline-block;
+    height: 26px;
+    width: 1px;
+    background-color: #d9d9d9;
+    -moz-transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    position: relative;
+    top: 8px;
+}
+.ui-tabs .ui-tabs-nav li:last-child:after{
+    content: none;
 }
