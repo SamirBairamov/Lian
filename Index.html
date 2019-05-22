@@ -21,10 +21,42 @@
         $(function () {
             $("#tabs").tabs();
         });
+
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $("#opener").on("click", function () {
+                $("#dialog").dialog("open");
+            });
+        });
     </script>
     <script src="Js/script.js"></script>
 </head>
 <body>
+
+<div id="dialog" title="FORGOT YOUR PASSWORD?">
+    <form action="" method="post">
+        <label>ENTER YOUR <br>
+            EMAIL
+        </label>
+        <input  type="text">
+        <button>RESET PASSWORD</button>
+        </form>
+
+        <a href="#">Log In Using Facebook</a>
+
+
+</div>
 <header>
     <div class="container">
         <a href="#" class="logo">
@@ -50,6 +82,9 @@
 
                 <li class="active">
                     <a href="#">HOME</a>
+                </li>
+                <li id="opener">
+                    <a href="#">Login</a>
                 </li>
 
 

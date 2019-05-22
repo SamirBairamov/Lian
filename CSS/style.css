@@ -172,11 +172,17 @@ section div .item_text2{
     background-color: transparent !important;
 
 }
-.owl-carousel .owl-nav:before.owl-prev {
-    background-color: black;
-    transition: 0.3s;
-    color: black;
+
+.owl-carousel .owl-nav .owl-prev:hover {
+    background-color: black!important;;
+    opacity: 1;
+
 }
+/*.owl-carousel .owl-nav:before.owl-prev {*/
+    /*background-color: black;*/
+    /*transition: 0.3s;*/
+    /*color: black;*/
+/*}*/
 
 
 
@@ -190,7 +196,14 @@ section div .item_text2{
     border: solid 1px #FFFFFF !important;
     border-radius: 20px;
     z-index: 5;
-    background-color: transparent !important;}
+    background-color: transparent !important;
+}
+
+.owl-carousel .owl-nav .owl-next:hover {
+    background-color: black !important;
+    opacity: 1;
+
+}
 
 /*/код*/
 .ui-widget.ui-widget-content {
@@ -258,4 +271,83 @@ section div .item_text2{
 }
 .ui-tabs .ui-tabs-nav li:last-child:after{
     content: none;
+}
+
+
+.ui-dialog{
+    max-width: 748px!important;
+    width: 100%!important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close{
+    display: none;
+}
+.ui-dialog .ui-dialog-title{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: black;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+}
+.ui-dialog .ui-dialog-titlebar{
+    padding: 0;
+}
+
+.ui-widget.ui-widget-content{
+    border: none;
+    border-radius: 0!important;
+    padding: 0;
+
+}
+.ui-widget-header{
+    background: none;
+    border: none;
+}
+
+.ui-dialog .ui-dialog-title{
+    margin: 0;
+}
+
+.ui-dialog form{
+    text-align: center;
+}
+.ui-dialog form label{
+    display: inline-block;
+    margin-right: 53px;
+    color: #363636;
+    font-size: 22px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.ui-dialog form input{
+    width: 100%;
+    max-width: 382px;
+    line-height: 58px;
+    background-color: #FFFFFF;
+}
+.ui-dialog .ui-dialog-content{
+    background-color: #fbfbfb;
+}
+
+/*кнопки всплывающего окао регистрации*/
+div form label{
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    max-width: 528px;
+    color: black;
+}
+
+.ui-dialog a{
+    background-color: #bfbfbf;
+    text-align: center;
+    color: black;
+    font-size: 24px;
 }
