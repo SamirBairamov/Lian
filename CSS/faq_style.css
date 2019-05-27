@@ -26,12 +26,50 @@ body {
     height: 100%;
 }
 
-#accordion{
+#accordion {
     max-width: 1185px;
-    background-color: #fef5fa;
+    margin: auto;
+    border-radius: 0;
 }
-h3{
+
+.ui-accordion .ui-accordion-header {
     font-size: 28px;
     color: #860da6;
     background-color: #fce7f2;
+}
+
+.ui-icon, .ui-widget-content .ui-icon {
+    float: right;
+}
+
+.ui-accordion .ui-accordion-content {
+    font-size: 24px;
+    color: black;
+    background-color: #fef5fa;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background-color: #fef5fa !important;
+
+}
+
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: url('../images/faq-test-test_close.png');
+}
+
+.ui-icon-triangle-1-s {
+    display: none;
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image: url('../images/faq-test-test_open.png');
+}
+
+.ui-icon-triangle-1-e {
+    background-position: 0 0;
+}
+
+.ui-icon {
+    width: 15px;
+    height: 27px;
 }
